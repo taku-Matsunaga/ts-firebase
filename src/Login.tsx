@@ -20,7 +20,7 @@ const Login: React.FC = (props: any) => {
       user && navigate("/");
     });
     return () => unSub();
-  }, [props.history]);
+  }, [navigate]);
 
   return (
     <div className={styles.login__root}>
